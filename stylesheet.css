@@ -108,3 +108,15 @@ form input[type="submit"] {
     max-width: 100%;
   }
 }
+
+/* Default styles for the fieldset */
+fieldset {
+  width: 100%; /* Occupy the full available width */
+}
+
+/* Adjust styles for smaller screens (e.g., mobile phones) */
+@media (max-width: 767px) {
+  fieldset {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+}
