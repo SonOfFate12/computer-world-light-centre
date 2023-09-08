@@ -56,6 +56,11 @@ section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+.main {
+  background-color: #e5e4d7;
+  margin: 10px;
+  border-radius: 5px;
+  
 
 /* Footer styles */
 footer {
