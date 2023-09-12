@@ -46,6 +46,7 @@ nav {
   color: #ffcc00;
 }
 /* Your styles here */
+/* Your styles here */
 
 /* Hamburger menu styles */
 .menu-icon {
@@ -57,14 +58,15 @@ nav {
 }
 
 .menu {
-    display: none;
     padding: 20px;
     background-color: #333;
     color: white;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 #menu-toggle:checked + .menu {
-    display: block;
+    transform: translateY(0);
 }
 
 
