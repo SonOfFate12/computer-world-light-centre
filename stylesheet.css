@@ -53,17 +53,29 @@ nav {
   text-align: center;
 }
 
-/* Style for the list */
-.image-list {
-  list-style-type: none; 
+/* Style for the list of social icons */
+.social-icons {
+  list-style-type: none;
   padding: 0;
 }
 
-/* Style for list items (images) */
-.image-list li {
+/* Style for individual social icons */
+.social-icons li {
   display: inline-block;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
+
+/* Style for the icons themselves */
+.social-icons li i {
+  font-size: 24px; /* Adjust the size of the icons as needed */
+}
+
+/* Style for the icon links */
+.social-icons li a {
+  color: #fff; /* Icon color */
+  text-decoration: none;
+}
+
 
 /* Main content section styles */
 section {
