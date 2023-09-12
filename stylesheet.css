@@ -45,7 +45,25 @@ nav {
 .navbar a:hover {
   color: #ffcc00;
 }
+/* Style for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
+/* Style for the list */
+.image-list {
+  list-style-type: none; 
+  padding: 0;
+}
+
+/* Style for list items (images) */
+.image-list li {
+  display: inline-block;
+  margin: 0 10px; 
+}
 
 /* Main content section styles */
 section {
