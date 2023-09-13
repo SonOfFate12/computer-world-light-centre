@@ -139,8 +139,9 @@ form input[type="submit"] {
 
 /* Style the fieldset container */
 fieldset {
-  border: 2px solid #333; 
-  padding: 20px; 
+  border: 2px solid #333;
+  margin: 0;
+  padding: 0; 
   background-color: 
   border-radius: 10px; 
   width: 300px; 
