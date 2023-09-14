@@ -149,21 +149,21 @@ fieldset {
 }
   img {
   max-width: 100%;
-  height: auto;
+  height: 160px;
   }
   @media (max-width: 768px) {
   /* Styles for tablets and smaller screens */
   img {
     max-width: 100%;
-    height: auto;
+    height: 160px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 350px) {
   /* Styles for mobile screens */
   img {
     max-width: 100%;
-    height: auto;
+    height: 160px;
   }
 }
 
