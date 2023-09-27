@@ -25,9 +25,10 @@ header h1 {
   width: 100%;
   max-width: 100%;
 }
-@media screen and (min-width:350px){
-  .header-image{
-    max-width: 1200px;
+@media screen and (min-width: 350px){
+  .header h1-image{
+    max-width: 1600px;
+    min-width: 350px;
   }
 }
                    
