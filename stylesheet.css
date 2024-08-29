@@ -190,3 +190,53 @@ legend {
 
   }
 }
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #333;
+  width: 25px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.menu-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#menu-toggle:checked + .hamburger + .menu-links {
+  display: flex;
+}
+
+.menu-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li {
+  margin-bottom: 10px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-links i {
+  margin-right: 10px;
+  font-size: 18px;
+}
