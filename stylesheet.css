@@ -332,6 +332,7 @@ cursor: pointer;
 .moving-messages span {
   display: inline-block;
   animation: move 30s linear infinite;
+	color: orange;
 }
 
 @keyframes move {
