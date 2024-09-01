@@ -290,3 +290,34 @@ cursor: pointer;
 	padding: 0.5px;
 	gap: 0;
 }
+
+.image-gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.image-container {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid black;
+	position: relative;
+	border-radius: 0%;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+.image-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 98%;
+	background-color: #000040;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
