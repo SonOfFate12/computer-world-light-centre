@@ -9,6 +9,7 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' rel='stylesheet'>
 
+<script src="javascript.js"></script>
 
 </head>
 <body>
@@ -43,10 +44,14 @@
   </ul>
 </div>
 </div>
-		<div class = "Box">
-		<button class="search-button">
-		<i class="fa fa-search"></i> </button>
-		<input type="text" name="" placeholder="search...">
+		<div class="Box">
+  <button class="search-button">
+    <i class="fas fa-search"></i> <!-- Use 'fas' instead of 'fa' for solid icons -->
+  </button>
+  <input type="text" id="search-input" placeholder="Search...">
+  <div id="search-results"></div>
+</div>
+
  
 	</div>
   </nav>
@@ -55,456 +60,67 @@
 	<h2 style ="color: white; font-size: 20px; margin-bottom: -25px;">OUR PRODUCTS AND SERVICES</h2><br></fieldset>
 	 
 	<fieldset style="background-color: white; margin-left: 10px; width: 92%; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" >  
-  <section>
-<hr>	 
-<div class="main">
-	<fieldset>
-	<legend> <b> LAPTOPS <b> </legend>
-     <a href="laptops.html"> <img src="lap1.png" alt="Laptops" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;":></a>
-	 <p> <h1> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h1> 
-	  </p>
-	 
+  <br>
+<fieldset>
+	  	<div class="image-gallery">
+		<div class="image-container" style="background-color: #f5f5dc;">
+		
+			<a href="laptops.html"> <img src="lap1.png" alt="Image 1"> </a>
+			<div class="image-description">LAPTOPS</div>
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+			<a href="laptops.html"><img src="cpu1.png" alt="Image 2"> </a>
+<div class="image-description">CPUs</div> 
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+			<img src="acc.png" alt="Image 3">
+			<div class="image-description">ACCESSORIES</div>
+		</div>
+	</div>
 </fieldset>
- </p>
-    </div>
-    <div>
-	 <br>
-	 <hr>
-
-    <div class="main">
-	  <fieldset >
-	  <legend> <b> CPUs <b> </legend>
-	   <a href="laptops.html"> <img src="cpu1.png" alt="Desktops" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-</fieldset>
+<br>
 </p>
-    </div>
-	  </div>
-	  </b>
-    <br>
-	<hr>
-	 <p>
-    </div>
-    <div class="main">
+
+<fieldset>
+<div class="image-gallery">
+		<div class="image-container" style="background-color: #f5f5dc;">
+		
+			<a href="laptops.html"> <img src="phon1.png" alt="Image 1"> </a>
+			<div class="image-description">PHONES</div>
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+			<a href="laptops.html"><img src="tvs.png" alt="Image 2"> </a>
+<div class="image-description">TVs</div> 
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+			<img src="woofer.png" alt="Image 3">
+			<div class="image-description">WOOFERS</div>
+		</div>
+	</div>
     
-	  <fieldset >
-	  <legend> <b> HARDDISKS <b> </legend>
-	  <a href="laptops.html"> <img src="tb1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
+	  </fieldset >
+	  <br>
+	  <br>
+	<fieldset>
+<div class="image-gallery">
+		<div class="image-container" style="background-color: #f5f5dc;">
+		
+			<a href="laptops.html"> <img src="electric.png" alt="Image 1"> </a>
+			<div class="image-description">ELECTRONICS</div>
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+		
+			<a href="laptops.html"> <img src="fan.png" alt="Image 1"> </a>
+			<div class="image-description">FANS</div>
+		</div>
+		<div class="image-container" style="background-color: #f5f5dc;">
+		
+			<a href="laptops.html"> <img src="service.png" alt="Image 1"> </a>
+			<div class="image-description">SERVICES</div>
+		</div>
+	</div>
     
-	  <fieldset >
-	  <legend> <b> EARPHONES <b> </legend>
-	  <a href="laptops.html"> <img src="ear1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> USB CABLES <b> </legend>
-	  <a href="laptops.html"> <img src="usb1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> CARD READERS <b> </legend>
-	  <a href="laptops.html"> <img src="ca1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> RECHARGEABLE LAMPS <b> </legend>
-	  <a href="laptops.html"> <img src="laaa.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> BULB HOLDERS <b> </legend>
-	  <a href="laptops.html"> <img src="hol1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> LAPTOP SPEAKERS <b> </legend>
-	  <a href="laptops.html"> <img src="sp1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> IRON BOXES <b> </legend>
-	  <a href="laptops.html"> <img src="iron1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> PHONE BATTERIES <b> </legend>
-	  <a href="laptops.html"> <img src="bbaa.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> FLASH DRIVES <b> </legend>
-	  <a href="laptops.html"> <img src="fla1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> HEADPHONES <b> </legend>
-	  <a href="laptops.html"> <img src="phn1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset>
-	  <legend> <b> EXTENSION CABLES <b> </legend>
-	  <a href="laptops.html"> <img src="exten.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> PHONE CHARGERS <b> </legend>
-	  <a href="laptops.html"> <img src="ch12.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <hr>
-	    <p>
-    </div>
-    <div class="main">
-    
-	  <fieldset >
-	  <legend> <b> PACOLATERS <b> </legend>
-	  <a href="laptops.html"> <img src="pac1.png" alt="Hard disk" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	  <hr>
-	  
-	   <p>
-    
-    <div class="main">
-      
-	  <fieldset >
-	  <legend> <b> HARDDISK CASINGS <b> </legend>
-	   <a href="laptops.html">  <img src="casin1.png" alt="Hard disk casing" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </p>
-	  </div>
-	   <br>
-	   <p>
-    <hr>
-    <div class="main">
-      
-	  <fieldset >
-	  <legend> <b> MICE <b> </legend>
-	  <a href="laptops.html"> <img src="ice.png" alt="mouse" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-     <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </div>
-	  </p>
-	   <br>
-	  <hr>
-	  <p>
-    
-    <div class="main">
-      
-	  <fieldset >
-	  <legend> <b> KEYBOARDS <b> </legend>
-	  <a href="laptops.html"> <img src="key1.png" alt="Keyboard" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-     <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </div>
-	  </p>
-	   <br>
-	   <hr>
-	    <p>
-    
-    <div class="main">
-      
-	  <fieldset >
-	  <legend> <b> MONITORS <b> </legend>
-	  <a href="monitors.html"> <img src="mon1.png" alt="Monitors" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-     <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </div>
-	  </p>
-	   <br>
-	<hr>
-	   <p>
-    
-    <div class="main">
-      
-	  <fieldset >
-	  <legend> <b> BULBS <b> </legend>
-	  <a href="laptops.html"> <img src="bulb1.png" alt="Bulb" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-     <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  </div>
-	  </p>
-	   <br>
-	  <hr>
-	 
-	   <p>
-    
-    <div class="main">
-     
-	  <fieldset >
-	  <legend> <b> SMART PHONES <b> </legend>
-	  <a href="laptops.html"> <img src="phon1.png" alt="phone" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  
-	   <p>
-    </div>
-    <div>
-	<br>
-	  <hr>
-	 
-	 
-      <div class="main">
-	  <fieldset >
-	   <legend>  <b>LAPTOP CHARGERS<b> </legend>
-	   <a href="laptops.html"> <img src="adap1.png" alt="phone" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-      <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  
-	  <hr>
-	     <p>
-    </div>
-    <div>
-	<br>
-	  <hr>
-	 
-	 
-      <div class="main">
-	  <fieldset >
-	   <legend>  <b>HDMIs<b> </legend>
-	   <a href="laptops.html"> <img src="hdm1.png" alt="hdmi" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-     <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	 
-	     <p>
-		 
-    </div>
-    
-	<br>
-	  
-	 <hr>
-	 
-      <div class ="main">
-	  <fieldset >
-	   <legend>  <b>PHONE FLASHING SERVICES<b> </legend>
-	   <a href="services.html"><img src="pon1.png" alt="phone" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-	   <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	  
-	  <hr>
-	   <p>
-    </div>
-    
-	<br>
-	  
-	
-	<hr>
-	 
-      <div class ="main">
-	  <fieldset >
-	   <legend>  <b>WINDOWS INSTALLATION SERVICES<b> </legend>
-     <a href="services.html"> <img src="wi.jpeg" alt="windows installation" class="header-image"
-     style="width: 100%; max-width: 100%;"
-     style="width: 100%; max-width: 1600px;" media="(min-width: 350px)"
-		 style= "height: 140px;"></a>
-	 <p> <h5> <mark style="background-color: orange; font-size: 17.3px;">Click in the image for details...</mark></h5> 
-	  </p>
-	  </fieldset>
-	   </div>
-  </section>
+	  </fieldset >
   </fieldset>
   
   <footer class="footer">
