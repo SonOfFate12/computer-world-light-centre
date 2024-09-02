@@ -343,3 +343,31 @@ cursor: pointer;
     transform: translateX(-100%);
   }
 }
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000040;
+  padding: 10px;
+  text-align: center; 
+  align-content: center;
+}
+
+.clock {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: orange;
+  text-align: center;
+}
+
+.sticky-footer li {
+  display: inline-block;
+  margin: 0 10px;
+  color: orange;
+}
+
+/* Style for the icons themselves */
+.sticky-footer li i {
+  font-size: 24px; 
+}
