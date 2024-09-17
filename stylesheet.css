@@ -385,6 +385,8 @@ iframe {
 	width: 80%;
 	height: 500px;
 	filter: invert(100%);
-	margin-right: 10px;
-	margin-left: 10px;
+	border: none;
+	position: absolute;
+	top: 78%;
+	left: 0;
 }
