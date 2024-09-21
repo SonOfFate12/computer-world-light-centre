@@ -112,8 +112,8 @@ section h2 {
 form {
   display: flex;
   flex-direction: column;
-  max-width: device-width;
-  margin: 0 auto;
+  width: 60%;
+  margin: 20px auto;
 }
 
 form label {
