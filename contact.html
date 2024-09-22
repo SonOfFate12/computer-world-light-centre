@@ -19,19 +19,6 @@
    })();
 </script>
 <script src="javascript.js"></script>
-<script>
-	function SendMail() {
-  Var params = {
-    from_name : document.getElementById("fullName").value,
-    email_id : document.getElementById("email_id").value,
-    messageb: document.getElementById("message").value,
-  }
-    emailjs.send ("service_9cdx5co", "template_lkzosrj", params).then(function (res) {
-      alert("Success! "+ res.status);
-    })
-	}
-	
-</script>
 </head>
 <body>
   <header>
@@ -67,7 +54,19 @@
 	</div> </form>
 </fieldset>
   </section>
-
+<script>
+	function SendMail() {
+  Var params = {
+    from_name : document.getElementById("fullName").value,
+    email_id : document.getElementById("email_id").value,
+    messageb: document.getElementById("message").value,
+  }
+    emailjs.send ("service_9cdx5co", "template_lkzosrj", params).then(function (res) {
+      alert("Success! "+ res.status);
+    })
+	}
+	
+</script>
 
 
   <footer class="footer">
