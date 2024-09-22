@@ -38,20 +38,13 @@ function removeItemFromCart() {
 }
 
 //form
-    const form = document.getElementById('contact-form');
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const message = document.getElementById('message').value;
-
-      emailjs.send('service_9cdx5co', 'template_lkzosrj', {
-        message: message,
-      })
-      .then((response) => {
-        console.log('Email sent successfully', response);
-      })
-      .catch((error) => {
-        console.error('Error sending email', error);
-      });
-    });
+function sendMail(){
+  let parms = {
+    name : document.getElementById("name").Value,
+    email : document.getElementById("email").Value,
+    subject : document.getElementById("subject").Value,
+    message : document.getElementById("message").Value,
+  }
+  emailjs.send("service_9cdx5co","template_lkzosrj",parms).then(alert{"Email Sent!!"})
+}
