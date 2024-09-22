@@ -45,5 +45,5 @@ Var params = {
 from_name : document.getElementById("fullName"). value,
 email id : document.getElementById ("email_id").value,
 message: document.getElementBy Id( "message").value,
-emailjs.send ("service _osed6pl", "template_lkzosrj", params).then(function (res) {
+emailjs.send ("service_9cdx5co", "template_lkzosrj", params).then(function (res) {
 alert("Success! "+ res.status);
