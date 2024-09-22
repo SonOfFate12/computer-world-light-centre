@@ -38,13 +38,34 @@ function removeItemFromCart() {
 }
 
 //form
+```
 function sendMail() {
-  var params = {
-    from_name : document.getElementById("fullName").value,
-    email_id : document.getElementById("email_id").value,
-    message : document.getElementById("message").value,
+  const fullName = document.getElementById("fullName").value.trim();
+  const emailId = document.getElementById("email_id").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!fullName || !emailId || !message) {
+    alert("Please fill in all fields.");
+    return;
   }
-  emailjs.send("service_9cdx5co","template_lkzosrj",params).then(function (res) {
-    alert("success! " + res.status);
-  })
+
+  const params = {
+    from_name: fullName,
+    email_id: emailId,
+    message: message,
+  };
+
+  emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
+    .then((res) => {
+      if (res.status === 200) {
+        alert("Email sent successfully!");
+      } else {
+        alert(`Error: ${res.status}`);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      alert("Error sending email. Please try again.");
+    });
 }
+```
