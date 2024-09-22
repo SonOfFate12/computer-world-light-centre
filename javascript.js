@@ -45,7 +45,7 @@ function removeItemFromCart() {
 
       const message = document.getElementById('message').value;
 
-      emailjs.send('service_x0wcr44', 'template_lkzosrj', {
+      emailjs.send('service_9cdx5co', 'template_lkzosrj', {
         message: message,
       })
       .then((response) => {
