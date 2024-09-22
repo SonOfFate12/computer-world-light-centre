@@ -36,15 +36,3 @@ function removeItemFromCart() {
     updateCartCount();
   }
 }
-
-//form
-function SendMail() {
-  Var params = {
-    from_name : document.getElementById("fullName").Value,
-    email_id : document.getElementById("email_id").Value,
-    messageb: document.getElementById("message").Value,
-  }
-    emailjs.send ("service_9cdx5co", "template_lkzosrj", params).then(function (res) {
-      alert("Success! "+ res.status);
-    })
-}
