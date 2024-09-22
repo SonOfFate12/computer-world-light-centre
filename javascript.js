@@ -38,13 +38,12 @@ function removeItemFromCart() {
 }
 
 //form
-
-function sendMail(){
-  var params = {
-    from_name : document.getElementById("fullName").Value,
-    email_id : document.getElementById("email_id").Value,
-    message : document.getElementById("message").Value,
-  }
+function sendMail() {
+  var params = {
+    from_name : document.getElementById("fullName").Value,
+    email_id : document.getElementById("email_id").Value,
+    message : document.getElementById("message").Value,
+  }
   emailjs.send("service_9cdx5co","template_lkzosrj",params).then(function (res) {
     alert("success! " + res.status);
   })
