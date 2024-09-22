@@ -38,6 +38,8 @@ function removeItemFromCart() {
 }
 
 //form
+emailjs.init('YOUR_USER_ID');
+
 function sendMail() {
   const fullName = document.getElementById("fullName").value;
   const emailId = document.getElementById("email_id").value;
@@ -50,11 +52,7 @@ function sendMail() {
   };
 
   emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
-    .then((res) => {
-      if (res.status === 200) {
-        alert("Email sent successfully!");
-      } else {
-        alert("Error sending email.");
-      }
+    .then(() => {
+      alert("Email sent successfully!");
     });
 }
