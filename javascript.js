@@ -38,7 +38,7 @@ function removeItemFromCart() {
 }
 
 //form
-emailjs.init('YOUR_USER_ID');
+emailjs.init('9s5Wf5m9RZgyxNjGM');
 
 function sendMail() {
   const fullName = document.getElementById("fullName").value;
