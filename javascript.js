@@ -40,19 +40,10 @@ function removeItemFromCart() {
 //form
 emailjs.init('9s5Wf5m9RZgyxNjGM');
 
-function sendMail() {
-  const fullName = document.getElementById("fullName").value;
-  const emailId = document.getElementById("email_id").value;
-  const message = document.getElementById("message").value;
-
-  const params = {
-    from_name: fullName,
-    email_id: emailId,
-    message: message,
-  };
-
-  emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
-    .then(() => {
-      alert("Email sent successfully!");
-    });
-}
+function SendMail() {
+Var params = {
+from_name : document.getElementById("fullName"). value,
+email id : document.getElementById ("email_id").value,
+message: document.getElementBy Id( "message").value,
+emailjs.send ("service _osed6pl", "template_7e92ekr", params).then(function (res) {
+alert("Success! "+ res.status);
