@@ -60,7 +60,7 @@ function sendMail() {
     message: message,
   };
 
-  emailjs.init('YOUR_USER_ID');
+  emailjs.init('tTmDjYO-5IdYSqzZv');
   emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
     .then((res) => {
       if (res.status === 200) {
