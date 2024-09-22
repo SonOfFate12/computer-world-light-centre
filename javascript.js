@@ -38,7 +38,6 @@ function removeItemFromCart() {
 }
 
 //form
-```
 function sendMail() {
   const fullName = document.getElementById("fullName").value.trim();
   const emailId = document.getElementById("email_id").value.trim();
@@ -68,4 +67,3 @@ function sendMail() {
       alert("Error sending email. Please try again.");
     });
 }
-```
