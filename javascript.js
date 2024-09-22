@@ -40,11 +40,12 @@ function removeItemFromCart() {
 //form
 
 function sendMail(){
-  let parms = {
-    name : document.getElementById("name").Value,
-    email : document.getElementById("email").Value,
-    subject : document.getElementById("subject").Value,
+  var parms = {
+    from_name : document.getElementById("fullName").Value,
+    email_id : document.getElementById("email_id").Value,
     message : document.getElementById("message").Value,
   }
-  emailjs.send("service_9cdx5co","template_lkzosrj",parms).then(alert{"Email Sent!!"})
+  emailjs.send("service_9cdx5co","template_lkzosrj",parms).then(function (res) {
+    alert("success! " , res.status);
+  })
 }
