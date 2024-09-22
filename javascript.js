@@ -39,20 +39,9 @@ function removeItemFromCart() {
 
 //form
 function sendMail() {
-  const fullName = document.getElementById("fullName").value.trim();
-  const emailId = document.getElementById("email_id").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  if (!fullName || !emailId || !message) {
-    alert("Please fill in all fields.");
-    return;
-  }
-
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (!emailRegex.test(emailId)) {
-    alert("Invalid email address. Please use a valid email.");
-    return;
-  }
+  const fullName = document.getElementById("fullName").value;
+  const emailId = document.getElementById("email_id").value;
+  const message = document.getElementById("message").value;
 
   const params = {
     from_name: fullName,
@@ -60,17 +49,12 @@ function sendMail() {
     message: message,
   };
 
-  emailjs.init('tTmDjYO-5IdYSqzZv');
   emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
     .then((res) => {
       if (res.status === 200) {
         alert("Email sent successfully!");
       } else {
-        alert(`Error: ${res.status}`);
+        alert("Error sending email.");
       }
-    })
-    .catch((err) => {
-      console.error(err);
-      alert("Error sending email. Please try again.");
     });
 }
