@@ -38,8 +38,6 @@ function removeItemFromCart() {
 }
 
 //form
-emailjs.init('9s5Wf5m9RZgyxNjGM');
-
 function SendMail() {
   Var params = {
     from_name : document.getElementById("fullName"). value,
