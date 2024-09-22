@@ -48,12 +48,19 @@ function sendMail() {
     return;
   }
 
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(emailId)) {
+    alert("Invalid email address. Please use a valid email.");
+    return;
+  }
+
   const params = {
     from_name: fullName,
     email_id: emailId,
     message: message,
   };
 
+  emailjs.init('YOUR_USER_ID');
   emailjs.send('service_9cdx5co', 'template_lkzosrj', params)
     .then((res) => {
       if (res.status === 200) {
